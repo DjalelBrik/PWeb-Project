@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    color: #17324d;
+    background-color: #063777;
+}
+.Header {
+    box-sizing: border-box;
+    width: 80%;
+    border-radius: 0px 0px 16px 16px;
+    min-height: 78px;
+    padding: 18px 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background:white;
+    box-shadow: 0px 16px 34px rgba(0, 0, 0, 0.15);
+}
+.start{
+    display: flex;
+    justify-content: center;
+
+}
+.logo {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgb(54, 54, 224), rgb(95, 190, 95));
+    color: white;
+    font-size: larger;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.1);
+}
+.Title {
+    color: #063777;
+    display:flex;
+    justify-content: space-between;
+}
+.Title h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 0.04em;
+}
+.Container{
+    background-color: white;
+    width: 40%;
+    height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-top:12px ;
+    border-radius: 15px;
+}
+.Description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+   word-wrap: break-word;
+   text-align: center;
+
+}
+.Description p{
+     word-wrap: break-word;
+   text-align: center;
+   color: rgb(110, 110, 110);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 8px;
+}
+.form input{
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0,0.1);
+    border-radius: 10px;
+    padding: 5px;
+}
+.form input:focus{
+    border-color: rgba(73, 73, 241, 0.2);
+    box-shadow: 1px 13px 12px rgb(73, 73, 241,0.1);
+    background-color: white;
+    outline: none;
+}
+.form input:hover{
+    border-color:#063777;
+    box-shadow: 1px 13px 12px #06377703;
+    background-color: white;
+    outline: none;
+}
+
+button{
+    background-color: #063777;
+    width:80%;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    border: none;
+}
+button:hover{
+    background-color: #052f67;
+}
+.Clickhere a{
+    text-decoration: none;
+    font-family:sans-serif;
+    font-size: medium;
+    font-weight: bold;
+}
+.Clickhere a:hover{
+  color:#0c53b0;
+}
