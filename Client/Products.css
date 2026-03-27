@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+body {
+    background: #f5f7fb;
+    color: #111;
+}
+.Body {
+    margin: 20px;
+}
+.header {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.Title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color:#2563eb;
+}
+.Title h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.links a {
+ text-decoration: none;
+ color: #001c5d;
+ font-size: 15px;
+}
+.links{
+    display: flex;
+     gap:10px;
+}
+.Cart button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.search {
+    margin: 25px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.search input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.search input:focus{
+    outline: none;
+}
+.filter {
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+.Products h1 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.Products p {
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 15px;
+   margin-left: 7px;
+}
+.Boxes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 20px;
+}
+.box {
+    display: flex;
+    gap: 12px;
+    background: white;
+    padding: 12px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+.box:hover {
+    transform: translateY(-5px);
+}
+.box img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text h3 {
+    font-size: 15px;
+}
+.text p {
+    font-size: 12px;
+    color: gray;
+}
+.text span {
+    font-weight: bold;
+}
+.add {
+    margin-top: 8px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.show{
+    background-color: rgb(44, 214, 44);
+     margin-top: 8px;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+@media (max-width: 768px) {
+    .links {
+        display: none;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

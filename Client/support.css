@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+body {
+    background: #f5f7fb;
+    color: #111;
+    line-height: 1.6;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+.Title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2563eb;
+}
+.Title h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.links {
+    display: flex;
+    gap: 12px;
+}
+.links a {
+    text-decoration: none;
+    color: #001c5d;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.links a:hover {
+    color: #2563eb;
+}
+.Cart button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.Cart button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+.hero {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    margin: 24px 20px 0;
+    padding: 45px 25px;
+    border-radius: 22px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+    text-align: center;
+}
+.hero h1 {
+    font-size: 34px;
+    margin-bottom: 22px;
+}
+.search {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 14px 16px;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+.search i {
+    color: #64748b;
+}
+.search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: transparent;
+    color: #111;
+}
+.section {
+    margin: 28px 20px 0;
+}
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #0f172a;
+}
+.section p {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 18px;
+}
+.categories {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: white;
+    padding: 22px 18px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card i {
+    color: #2563eb;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 14px;
+}
+.card h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+    color: #0f172a;
+}
+.card p {
+    font-size: 13px;
+    color: gray;
+    margin: 0;
+}
+.faq {
+    display: grid;
+    gap: 14px;
+}
+.faq-item {
+    background: white;
+    border-radius: 16px;
+    padding: 18px 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.faq-item:hover {
+    transform: translateY(-3px);
+    color: #2563eb;
+}
+.faq-item span {
+    font-size: 22px;
+    color: #2563eb;
+    line-height: 1;
+}
+.help {
+    margin: 28px 20px 30px;
+}
+.help h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+    color: #0f172a;
+}
+.help {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 20px;
+}
+.help h2 {
+    grid-column: 1 / -1;
+}
+.chat,
+.email {
+    background: white;
+    padding: 24px 20px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+.chat:hover,
+.email:hover {
+    transform: translateY(-4px);
+}
+.chat h3,
+.email h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #0f172a;
+}
+.chat p,
+.email p {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 16px;
+}
+.chat button,
+.email button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.chat button:hover,
+.email button:hover {
+    background: #1d4ed8;
+}
+
+@media (max-width: 992px) {
+    .categories {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+}
+@media (max-width: 768px) {
+    .links {
+        display: none;
+    }
+    .header {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .hero {
+        margin: 18px 14px 0;
+        padding: 32px 18px;
+    }
+    .hero h1 {
+        font-size: 26px;
+    }
+    .section,
+    .help {
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+    .categories,
+    .help {
+        grid-template-columns: 1fr;
+    }
+    .search {
+        padding: 12px 14px;
+    }
+}
