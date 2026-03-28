@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+body {
+    background: #f5f7fb;
+    color: #111;
+    line-height: 1.6;
+}
+.Product-Detail {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 28px;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+.product-image {
+    position: relative;
+    background: linear-gradient(135deg, #eaf1ff, #f8fbff);
+    border-radius: 22px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 420px;
+    margin-bottom: 18px;
+}
+.product-image img {
+    width: 100%;
+    max-width: 420px;
+    object-fit: contain;
+    border-radius: 18px;
+    filter: drop-shadow(0 20px 30px rgba(37, 99, 235, 0.15));
+}
+.badge{
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background: #2563eb;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.Colors{
+    display: flex;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+.Colors img {
+    width: 88px;
+    height: 88px;
+    object-fit: cover;
+    border-radius: 16px;
+    background: white;
+    border: 2px solid transparent;
+    padding: 6px;
+    cursor: pointer;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+.Colors img:hover {
+    transform: translateY(-3px);
+}
+.product-title {
+    font-size: 34px;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+.price {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+.new-price {
+    font-size: 30px;
+    font-weight: 700;
+    color: #2563eb;
+}
+.old-price {
+    font-size: 17px;
+    color: #94a3b8;
+    text-decoration: line-through;
+}
+.stock {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #dcfce7;
+    color: #15803d;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.finish,
+.storage {
+    margin-bottom: 22px;
+}
+.finish p,
+.storage p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+.colors {
+    display: flex;
+    gap: 12px;
+}
+.color {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #111827;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.color.blue {
+    background: #2563eb;
+}
+.color.gray {
+    background: #94a3b8;
+}
+.storage-options {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.storage-options  {
+  border: 1px solid rgba(0, 0, 0, 0.201) ;
+  width: 150px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  gap: 10px;
+}

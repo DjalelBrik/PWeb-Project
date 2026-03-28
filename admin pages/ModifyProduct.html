@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore</title>
+    <link rel="stylesheet" href="ModifyProduct.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+<body>
+<div class="Body">
+    <div class="header">
+        <a href="Product.html"><span class="back"><i data-lucide="arrow-left"></i></span></a>
+        <h2>Modify Product</h2>
+    </div>
+    <div class="title">
+        <p class="subtitle">INVENTORY MANAGEMENT</p>
+        <h1>Modify Our Product</h1>
+        <p class="description">
+            Fill in the essential details to showcase your product in the TechStore ecosystem.
+        </p>
+    </div>
+    <div class="upload">
+        <p class="Title">PRODUCT MEDIA</p>
+        <div class="boxUpload">
+            <div class="content">
+                <div class="icon"><i data-lucide="cloud"></i></div>
+                <p>Tap to upload primary image</p>
+                <input type="file">
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <div class="input">
+            <label>PRODUCT TITLE</label>
+            <input type="text" placeholder="e.g. NovaBeam X1 Projector">
+        </div>
+        <div class="input">
+            <label>CATEGORY</label>
+            <select>
+                <option disabled selected hidden>Select Category</option>
+                <option value="Phone">Phone</option>
+                <option value="Laptop">Laptop</option>
+                <option value="Watch">Watch</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="input">
+            <label>DESCRIPTION</label>
+            <textarea placeholder="Describe the key features and specifications..."></textarea>
+        </div>
+    </div>
+    <div class="footer">
+        <button class="save-btn" style="display: flex; justify-content: center; align-items: center; gap: 5px;"><i data-lucide="save"></i> Save Modification</button>
+    </div>
+</div>
+<script>lucide.createIcons();</script>
+</body>
+</html>

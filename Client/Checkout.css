@@ -9,6 +9,23 @@ background:#f5f7fb;
 color:#111;
 padding:20px;
 }
+.back {
+    width: 42px;
+    height: 42px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 3px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(0, 40, 126, 0.14), rgba(0, 87, 0, 0.18));
+    color: #063777;
+    font-size: 20px;
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.10);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
 .Body{
 max-width:1200px;
 margin:auto;
