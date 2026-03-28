@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore</title>
+      <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="Checkout.css">
+</head>
+<body>
+    <div class="Body">
+    <div class="header">
+        <h1>Secure Checkout</h1>
+        <p>Review your selection and provide delivery details to complete your order.</p>
+    </div>
+    <div class="container">
+        <div class="rightSide">
+            <div class="step">
+                <h2><span>1</span> Delivery Information</h2>
+                <div class="form">
+                    <div class="row">
+                        <div class="inputs">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Johnathan Doe">
+                        </div>
+                        <div class="inputs">
+                            <label>Phone Number</label>
+                            <input type="text" placeholder="+1 (555) 000-0000">
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <label>Shipping Address</label>
+                        <textarea placeholder="Street address, apartment, suite, unit, etc."></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="inputs">
+                            <label>City</label>
+                            <input type="text" placeholder="San Francisco">
+                        </div>
+                        <div class="inputs">
+                            <label>Postal Code</label>
+                            <input type="text" placeholder="94103">
+                        </div>
+                        <div class="inputs">
+                            <label>Country</label>
+                            <select>
+                                <option>United States</option>
+                                <option>France</option>
+                                <option>Algeria</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <h2><span>2</span> Payment Method</h2>
+                <div class="payment">
+                    <div class="payment-card active">
+                        <i data-lucide="banknote"></i>
+                        <h3>Cash on Delivery</h3>
+                        <p>Pay when your order arrives at your doorstep.</p>
+                    </div>
+                    <div class="payment-card disabled">
+                        <i data-lucide="credit-card"></i>
+                        <h3>Pay Now</h3>
+                        <p>Secure digital payment via card or wallet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="leftSide">
+            <h2>Order Summary</h2>
+            <div class="item">
+                <img src="../s23 ultra.jpg" alt="">
+                <div>
+                    <h4>NovaPulse Studio Pro</h4>
+                    <p>Space Gray | Wireless</p>
+                    <small>QTY: 1</small>
+                </div>
+                <span>$299.00</span>
+            </div>
+            <div class="item">
+                <img src="../s23 ultra.jpg" alt="">
+                <div>
+                    <h4>NovaWatch Series X</h4>
+                    <p>Ceramic White | 44mm</p>
+                    <small>QTY: 1</small>
+                </div>
+                <span>$149.00</span>
+            </div>
+            <hr>
+            <div class="Row">
+                <span>Subtotal</span>
+                <span>$448.00</span>
+            </div>
+            <div class="Row">
+                <span>Shipping</span>
+                <span class="free">FREE</span>
+            </div>
+            <div class="Row">
+                <span>Tax</span>
+                <span>$35.84</span>
+            </div>
+            <div class="total">
+                <span>Total Amount</span>
+                <span>$483.84</span>
+            </div>
+            <button class="confirm-btn">
+                <i data-lucide="lock"></i>
+                Confirm Order
+            </button>
+        </div>
+    </div>
+</div>
+<script>
+lucide.createIcons();
+</script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
