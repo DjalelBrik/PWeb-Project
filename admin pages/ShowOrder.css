@@ -79,6 +79,18 @@ body {
     background: #fef3c7;
     color: #b45309;
 }
+.status.shipped {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+.status.delivered {
+    background: #dcfce7;
+    color: #15803d;
+}
+.status.cancelled {
+    background: #fee2e2;
+    color: #b91c1c;
+}
 .product {
     display: flex;
     align-items: center;

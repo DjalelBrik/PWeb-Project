@@ -30,7 +30,7 @@
             <a href="AddProduct.html"><button>+ Add Product</button></a>
         </div>
         <div class="Search-filter">
-            <input type="text" placeholder="Search products...">
+            <input id="search" type="text" placeholder="Search products...">
             <select name="Filter" id="Select">
                 <option value="" disabled selected hidden>Select a category</option>
                 <option value="Phone">Phone</option>
@@ -44,42 +44,23 @@
             <thead>
                 <tr>
                     <th>Product ID</th>
+                    <th>Image</th>
                     <th>Product name</th>
                     <th>Quantity</th>
                     <th>Category</th>
                     <th>Price</th>
+                    <th>Description</th>
                     <th>Action</th>
                 </tr>
             </thead>
-            <tbody>
-               <tr>
-                <td>1023</td>
-                <td>Iphone 15 pro max</td>
-                <td>2</td>
-                <td>Phone</td>
-                <td>$500</td>
-                <td>
-                <a href="ProductShow.html"> <button class="show-btn"><i data-lucide="eye"></i></button></a>
-                 <a href="ModifyProduct.html"><button class="modify-btn"><i data-lucide="pencil"></i></button></a>
-                 <button class="delete-btn"><i data-lucide="trash2"></i></button>
-                </td>
-               </tr>
-                <tr>
-                <td>1024</td>
-                <td>Lenove thinkpad</td>
-                <td>4</td>
-                <td>Laptop</td>
-                <td>$300</td>
-                <td>
-                 <a href="ProductShow.html"> <button class="show-btn"><i data-lucide="eye"></i></button></a>
-                 <a href="ModifyProduct.html"><button class="modify-btn"><i data-lucide="pencil"></i></button></a>
-                 <button class="delete-btn"><i data-lucide="trash2"></i></button>
-                </td>
-               </tr>
+            <tbody id="productTable">
             </tbody>
          </table>
          </div>
     </div>
+    <script type="module" src="./logic/Product/Search.js"></script>
+        <script type="module" src="./logic/Product/DisplayTable.js"></script>
+ <script type="module" src="./logic/Product/FiltreProduct.js"></script>
      <script>
   lucide.createIcons();
 </script>

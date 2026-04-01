@@ -29,8 +29,8 @@
           <p>Experience precision engineering and editorial design in every byte. Discover our curated selection of high-performance tech.</p>
         </div>
         <div class="search">
-            <input type="text">
-            <select class="filter">
+            <input id="search" type="text">
+            <select id="filter" class="filter">
                 <option disabled selected hidden>All Tech</option>
                 <option value="Phone">Phone</option>
                 <option value="Laptop">Laptop</option>
@@ -66,7 +66,7 @@
                         <h3>Nova 15 pro Max</h3>
                         <p>Titanium frame,A17 chipset,and professional grade imaging system</p>
                         <span>$1,199</span>
-                        <button><i data-lucide="shopping-cart"></i>Add</button>
+                        <button id="add"><i data-lucide="shopping-cart"></i>Add</button>
                     </div>
                 </div>
             </div>
@@ -76,5 +76,8 @@
     <script>
         lucide.createIcons();
     </script>
+    <script type="module" src="./logic/AddtoCart.js"></script>
+    <script type="module" src="./logic/Search.js"></script>
+    <script type="module" src="./logic/Filter.js"></script>
 </body>
 </html>

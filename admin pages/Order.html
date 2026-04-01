@@ -28,10 +28,12 @@
         <div class="Title">
             <h1>Orders</h1>
             <div class="button">
-            <select class="Select">
+            <select id="Select" class="Select">
                 <option disabled selected hidden>Filtred</option>
                 <option value="Delivered">Delivered</option>
                 <option value="Pending">Pending</option>
+                <option value="Shipped">Shipped</option>
+                <option value="Cancelled">Cancelled</option>
             </select>
             <button>Export Report</button>
             </div>
@@ -42,39 +44,23 @@
                 <tr>
                     <th>Order ID</th>
                     <th>Customer</th>
-                    <th>Date</th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Total Price</th>
                     <th>Status</th>
-                    <th>Total</th>
+                    <th>date</th>
                     <th>Action</th>
                 </tr>
             </thead>
-            <tbody>
-               <tr>
-                <td>1023</td>
-                <td>ali</td>
-                <td>12/03</td>
-                <td>Delivered</td>
-                <td>$500</td>
-                <td>
-                 <button class="show-btn"><a href="ShowOrder.html"><i data-lucide="eye"></i></a></button>
-                 <button class="delete-btn"><i data-lucide="trash2"></i></button>
-                </td>
-               </tr>
-                <tr>
-                <td>1023</td>
-                <td>ali</td>
-                <td>12/03</td>
-                <td>Delivered</td>
-                <td>$500</td>
-                <td>
-                 <button class="show-btn"><i data-lucide="eye"></i></button>
-                 <button class="delete-btn"><i data-lucide="trash2"></i></button>
-                 </td>
-               </tr>
+            <tbody id="table">
             </tbody>
          </table>
          </div>
     </div>
+    <script type="module" src="./logic/Order/DisplayOrder.js"></script>
+    <script type="module" src="./logic/Order/FilterOrder.js"></script>
+
+
      <script>
   lucide.createIcons();
 </script>

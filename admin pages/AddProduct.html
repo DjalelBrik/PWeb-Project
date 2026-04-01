@@ -26,34 +26,51 @@
             <div class="content">
                 <div class="icon"><i data-lucide="cloud"></i></div>
                 <p>Tap to upload primary image</p>
-                <input type="file">
+                <input type="file" id="img">
             </div>
         </div>
     </div>
     <div class="form">
-        <div class="input">
-            <label>PRODUCT TITLE</label>
-            <input type="text" placeholder="e.g. NovaBeam X1 Projector">
+        <div class="form-row">
+            <div class="input">
+                <label>PRODUCT ID</label>
+                <input id="productId" type="number" placeholder="e.g. 1025">
+            </div>
+            <div class="input">
+                <label>PRODUCT NAME</label>
+                <input id="title" type="text" placeholder="e.g. NovaBeam X1 Projector">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="input">
+                <label>QUANTITY</label>
+                <input id="quantity" type="number" min="0" placeholder="e.g. 12">
+            </div>
+            <div class="input">
+                <label>CATEGORY</label>
+                <select id="category">
+                    <option value="" disabled selected hidden>Select Category</option>
+                    <option value="Phone">Phone</option>
+                    <option value="Laptop">Laptop</option>
+                    <option value="Watch">Watch</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
         </div>
         <div class="input">
-            <label>CATEGORY</label>
-            <select>
-                <option disabled selected hidden>Select Category</option>
-                <option value="Phone">Phone</option>
-                <option value="Laptop">Laptop</option>
-                <option value="Watch">Watch</option>
-                <option value="Other">Other</option>
-            </select>
+            <label>PRICE</label>
+            <input id="price" type="number" min="0" step="0.01" placeholder="e.g. 499.99">
         </div>
         <div class="input">
             <label>DESCRIPTION</label>
-            <textarea placeholder="Describe the key features and specifications..."></textarea>
+            <textarea id="description" placeholder="Describe the key features and specifications..."></textarea>
         </div>
     </div>
     <div class="footer">
         <button class="save-btn"><i data-lucide="save"></i> Save Product</button>
     </div>
 </div>
+<script type="module" src="./logic/Product/AddProduct.js"></script>
 <script>lucide.createIcons();</script>
 </body>
 </html>

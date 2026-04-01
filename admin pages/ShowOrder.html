@@ -14,42 +14,28 @@
         <h1>Order Details</h1>
     </div>
     <div class="card">
-        <h2>Order #1023</h2>
-        <p><strong>Date:</strong> 2026-03-25</p>
-        <p><strong>Status:</strong> <span class="status pending">Pending</span></p>
-        <p><strong>Total:</strong> $120</p>
+        <h2 id="orderTitle">Order #</h2>
+        <p><strong>Date:</strong> <span id="orderDate"></span></p>
+        <p><strong>Status:</strong> <span id="orderStatus" class="status"></span></p>
+        <p><strong>Total:</strong> $<span id="orderTotal"></span></p>
     </div>
     <div class="card">
         <h2>Customer Information</h2>
-        <p><strong>Name:</strong> Djalel Brik</p>
-        <p><strong>Email:</strong> djalel@email.com</p>
-        <p><strong>Phone:</strong> +213 555 00 00 00</p>
-        <p><strong>Address:</strong> Algiers, Algeria</p>
+        <p><strong>Name:</strong> <span id="customerName"></span></p>
+        <p><strong>Email:</strong> <span id="customerEmail"></span></p>
+        <p><strong>Phone:</strong> <span id="customerPhone"></span></p>
+        <p><strong>Address:</strong> <span id="customerAddress"></span></p>
     </div>
     <div class="card">
         <h2>Products</h2>
-        <div class="product">
-            <img src="../s23 ultra.jpg" alt="">
-            <div>
-                <h3>Wireless Headphones</h3>
-                <p>Qty: 1</p>
-                <p>Price: $80</p>
-            </div>
-        </div>
-        <div class="product">
-            <img src="../s23 ultra.jpg" alt="">
-            <div>
-                <h3>Smart Watch</h3>
-                <p>Qty: 1</p>
-                <p>Price: $40</p>
-            </div>
-        </div>
+        <div id="productsContainer"></div>
     </div>
     <div class="actions">
         <button class="confirm">Change Status</button>
-        <button class="cancel">Cancel Order</button>
     </div>
 </div>
+<script type="module" src="./logic/Order/ShowOrder.js"></script>
+<script type="module" src="./logic/Order/ChangeStatus.js"></script>
 <script>lucide.createIcons();</script>
 </body>
 </html>

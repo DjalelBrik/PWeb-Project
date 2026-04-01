@@ -49,13 +49,12 @@
     </div>
     </div>
     <div class="Search-filter">
-            <input type="text" placeholder="Search users...">
-            <select name="Filter" id="Select">
+            <input id="Search" type="text" placeholder="Search users...">
+            <select id="Select" name="Filter" id="Select">
                 <option value="" disabled selected hidden>Select a category</option>
                 <option value="Blocked">Blocked</option>
                 <option value="Active">Active</option>
-                <option value="Admin">Admin</option>
-                <option value="Client">Client</option>
+               <option value="Inactive">Inactive</option>
             </select>
         </div>
     <div class="table-order">
@@ -65,39 +64,24 @@
       <th>User ID</th>
       <th>Name</th>
       <th>Email</th>
+      <th>Phone</th>
       <th>Role</th>
       <th>Status</th>
       <th>Actions</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Ali</td>
-      <td>ali@email.com</td>
-      <td>Admin</td>
-      <td class="status">Active</td>
-      <td>
-        <button class="block-btn"><i data-lucide="lock-keyhole"></i></button>
-        <button class="delete-btn"><i data-lucide="trash2"></i></button>
-      </td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Sara</td>
-      <td>sara@email.com</td>
-      <td>User</td>
-      <td class="status">Active</td>
-      <td>
-        <button class="block-btn"><i data-lucide="lock-keyhole"></i></button>
-        <button class="delete-btn"><i data-lucide="trash2"></i></button>
-      </td>
-    </tr>
+  <tbody id="table">
   </tbody>
 </table>
     </div>
     </div>
     </div>
+        <script type="module" src="./logic/User/DisplayUser.js"></script>
+        <script type="module" src="./logic/User/Filter.js"></script>
+        <script type="module" src="./logic/User/Search.js"></script>
+
+
+
     <script>
   lucide.createIcons();
 </script>
