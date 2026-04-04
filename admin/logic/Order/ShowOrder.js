@@ -13,14 +13,6 @@ const customerPhone = document.getElementById("customerPhone");
 const customerAddress = document.getElementById("customerAddress");
 const productsContainer = document.getElementById("productsContainer");
 
-if (!order) {
-  alert("Order not found");
-  window.location.href = "/admin/Order";
-}
-
-function getStatusClass(status) {
-  return status.toLowerCase();
-}
 
 function renderProduct(orderItem) {
   productsContainer.innerHTML = `
@@ -39,7 +31,6 @@ function fillOrderDetails() {
   orderTitle.textContent = `Order #${order.id}`;
   orderDate.textContent = order.date;
   orderStatus.textContent = order.status;
-  orderStatus.classList.add(getStatusClass(order.status));
   orderTotal.textContent = order.totalPrice;
   customerName.textContent = order.customerName || "N/A";
   customerEmail.textContent = order.customerEmail || "N/A";

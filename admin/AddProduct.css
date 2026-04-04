@@ -180,7 +180,6 @@ input[type="file"]::file-selector-button {
     font-family: inherit;
     font-weight: 700;
     cursor: pointer;
-    transition: 0.2s ease;
 }
 input[type="file"]::file-selector-button:hover {
     transform: translateX(1px);

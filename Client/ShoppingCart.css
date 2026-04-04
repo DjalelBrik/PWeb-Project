@@ -1,11 +1,6 @@
 @import url("./Default.css");
 
-body {
-    background:
-        radial-gradient(circle at top right, rgba(37, 99, 235, 0.12), transparent 28%),
-        linear-gradient(180deg, #f8fbff 0%, #eef4fb 100%);
-    color: #111827;
-}
+
 .back {
     margin-bottom: 20px;
 }
@@ -49,14 +44,7 @@ body {
     border-radius: 24px;
     background: rgba(255, 255, 255, 0.72);
 }
-.items:empty::before {
-    content: "Your cart is empty. Add products to see them here.";
-    max-width: 300px;
-    color: #64748b;
-    font-size: 1rem;
-    line-height: 1.7;
-    text-align: center;
-}
+
 .item {
     display: grid;
     grid-template-columns: 96px minmax(0, 1fr) auto;
@@ -102,7 +90,6 @@ body {
     cursor: pointer;
     color: #dc2626;
     font-size: 16px;
-    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 .trash:hover {
     background: #dc2626;
@@ -128,7 +115,6 @@ body {
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 .quantity button:hover {
     background: #2563eb;
@@ -145,7 +131,6 @@ body {
     font-weight: 800;
     font-size: 1.15rem;
     color: #0f172a;
-    white-space: nowrap;
 }
 .Leftside {
     background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
@@ -203,7 +188,6 @@ body {
     gap: 10px;
     margin-bottom: 15px;
     box-shadow: 0 14px 30px rgba(37, 99, 235, 0.28);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .checkout-btn:hover {
     transform: translateY(-2px);

@@ -31,7 +31,6 @@ body {
     font-weight: 700;
     background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(95, 190, 95, 0.18));
     box-shadow: 0 10px 20px rgba(25, 52, 89, 0.08);
-    transition: 0.2s ease;
 }
 .back:hover {
     transform: translateY(-2px);
@@ -133,7 +132,6 @@ body {
     font-size: 0.96rem;
     font-weight: 800;
     cursor: pointer;
-    transition: 0.2s ease;
 }
 .confirm {
     background: linear-gradient(135deg, rgb(54, 54, 224), rgb(95, 190, 95));

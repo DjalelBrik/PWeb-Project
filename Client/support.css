@@ -61,7 +61,6 @@ body {
     padding: 22px 18px;
     border-radius: 18px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    transition: 0.3s;
 }
 .card:hover {
     transform: translateY(-5px);
@@ -96,7 +95,6 @@ body {
     align-items: center;
     font-weight: 500;
     cursor: pointer;
-    transition: 0.3s;
 }
 .faq-item:hover {
     transform: translateY(-3px);
@@ -157,7 +155,6 @@ body {
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
-    transition: 0.3s;
 }
 .chat button:hover,
 .email button:hover {

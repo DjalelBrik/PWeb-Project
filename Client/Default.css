@@ -42,7 +42,6 @@ body {
     color: #001c5d;
     font-size: 15px;
     font-weight: 500;
-    transition: color 0.3s ease;
 }
 
 .links a:hover,
@@ -65,7 +64,6 @@ body {
     gap: 5px;
     cursor: pointer;
     font-weight: 500;
-    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .Cart button:hover {

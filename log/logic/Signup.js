@@ -1,8 +1,8 @@
 const signupButton = document.getElementById("signupButton");
 
 function signup() {
-    const fullName = document.getElementById("fullName").value.trim();
-    const email = document.getElementById("signupEmail").value.trim();
+    const fullName = document.getElementById("fullName").value;
+    const email = document.getElementById("signupEmail").value;
     const password = document.getElementById("signupPassword").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
 
