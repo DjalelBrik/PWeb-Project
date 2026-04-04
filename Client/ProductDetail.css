@@ -1,79 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", sans-serif;
-}
+@import url("./Default.css");
+
 body {
-    background: #f5f7fb;
-    color: #111;
     line-height: 1.6;
 }
-.back {
-    width: 80px;
-    height: 50px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    border-radius: 12px;
-    background: linear-gradient(135deg, rgba(0, 40, 126, 0.14), rgba(0, 87, 0, 0.18));
-    color: #063777;
-    font-size: 20px;
-    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.10);
-    cursor: pointer;
-    margin-bottom: 20px;
-}
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-.Title {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #2563eb;
-}
-.Title h1 {
-    font-size: 20px;
-    font-weight: 700;
-}
-.links {
-    display: flex;
-    gap: 12px;
-}
-.links a {
-    text-decoration: none;
-    color: #001c5d;
-    font-size: 15px;
-    font-weight: 500;
-    transition: 0.3s;
-}
-.links a:hover {
-    color: #2563eb;
-}
-.Cart button {
-    background: #2563eb;
-    color: white;
-    border: none;
-    padding: 8px 14px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: 0.3s;
-}
-.Cart button:hover {
-    background: #1d4ed8;
-    transform: translateY(-2px);
-}
+
 .Product-Detail {
     max-width: 1100px;
     margin: 30px auto;
@@ -248,13 +178,6 @@ body {
     transform: translateY(-2px);
 }
 @media (max-width: 768px) {
-    .links {
-        display: none;
-    }
-    .header {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
     .Product-Detail {
         margin: 18px 14px;
         padding: 18px;

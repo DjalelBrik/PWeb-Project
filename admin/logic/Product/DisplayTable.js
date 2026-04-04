@@ -2,10 +2,17 @@ import { store } from "../../../data/Store.js";
 
 const table = document.getElementById("productTable");
 
-function DisplayTable() {
+export function DisplayTable(products = store.products) {
   table.innerHTML = "";
-
-  store.products.forEach((product) => {
+  if (products.length === 0) {
+    table.innerHTML = `
+      <tr>
+        <td colspan="8">No products found.</td>
+      </tr>
+    `;
+    return;
+  }
+  products.forEach((product) => {
     const row = document.createElement("tr");
 
     row.innerHTML = `

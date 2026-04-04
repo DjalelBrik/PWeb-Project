@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f7fb;
+    color: #111;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.Title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2563eb;
+}
+
+.Title h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.links {
+    display: flex;
+    gap: 12px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #001c5d;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.links a:hover,
+.links a.active {
+    color: #2563eb;
+}
+
+.Cart a {
+    text-decoration: none;
+}
+
+.Cart button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Cart button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.Body {
+    margin: 20px;
+}
+
+.back {
+    width: 42px;
+    height: 42px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(0, 40, 126, 0.14), rgba(0, 87, 0, 0.18));
+    color: #063777;
+    font-size: 20px;
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.1);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .links {
+        display: none;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .Body {
+        margin: 14px;
+    }
+}

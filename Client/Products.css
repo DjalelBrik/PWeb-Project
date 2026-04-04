@@ -1,164 +1,214 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", sans-serif;
-}
+@import url("./Default.css");
+
 body {
-    background: #f5f7fb;
-    color: #111;
+    background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.12), transparent 30%),
+        linear-gradient(180deg, #f8fbff 0%, #eef4fb 100%);
 }
+
 .Body {
-    margin: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.header {
-    margin: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-}
-.Title {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color:#2563eb;
-}
-.Title h1 {
-    font-size: 20px;
-    font-weight: 700;
-}
-.links a {
- text-decoration: none;
- color: #001c5d;
- font-size: 15px;
-}
-.links{
-    display: flex;
-     gap:10px;
-}
-.Cart button {
-    background: #2563eb;
-    color: white;
-    border: none;
-    padding: 8px 14px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-    font-weight: 500;
-}
+
 .search {
-    margin: 25px 0;
     display: flex;
-    gap: 10px;
+    gap: 14px;
+    align-items: center;
+    margin: 28px 0 32px;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 24px;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+}
+
+.search input,
+.filter {
+    height: 52px;
+    border-radius: 16px;
+    border: 1px solid #dbe4f0;
+    background: #ffffff;
+    color: #0f172a;
+    font-size: 0.98rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .search input {
     flex: 1;
-    padding: 12px;
-    border-radius: 30px;
-    border: none;
-    background: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    padding: 0 18px;
+    min-width: 0;
 }
-.search input:focus{
-    outline: none;
+
+.search input::placeholder {
+    color: #94a3b8;
 }
+
+.search input:focus,
+.filter:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
 .filter {
-    padding: 12px;
-    border-radius: 30px;
-    border: none;
-    background: white;
+    min-width: 180px;
+    padding: 0 16px;
     cursor: pointer;
 }
+
 .Products h1 {
-    font-size: 22px;
-    margin-bottom: 12px;
+    font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+    margin-bottom: 8px;
+    color: #0f172a;
 }
 
 .Products p {
-    font-size: 13px;
-    color: gray;
-    margin-bottom: 15px;
-   margin-left: 7px;
+    font-size: 0.98rem;
+    color: #64748b;
+    margin-bottom: 24px;
 }
+
 .Boxes {
     display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
 }
+
 .box {
     display: flex;
-    gap: 12px;
-    background: white;
-    padding: 12px;
-    border-radius: 18px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    transition: 0.3s;
+    flex-direction: column;
+    gap: 16px;
+    padding: 18px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    border-radius: 24px;
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
+
 .box:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    border-color: rgba(37, 99, 235, 0.3);
+    box-shadow: 0 24px 44px rgba(15, 23, 42, 0.12);
 }
+
 .box img {
-    width: 90px;
-    height: 90px;
+    width: 100%;
+    height: 220px;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 18px;
+    background: #e2e8f0;
 }
+
 .text {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: flex-start;
 }
+
 .text h3 {
-    font-size: 15px;
+    font-size: 1.08rem;
+    color: #0f172a;
+    margin-bottom: 8px;
 }
+
 .text p {
-    font-size: 12px;
-    color: gray;
+    margin-bottom: 14px;
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
+
 .text span {
-    font-weight: bold;
+    margin-bottom: 14px;
+    color: #0f172a;
+    font-size: 1.15rem;
+    font-weight: 800;
 }
+
+.add,
+.show {
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 14px;
+    padding: 12px 14px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
 .add {
-    margin-top: 8px;
-    background: #2563eb;
-    color: white;
-    border: none;
-    padding: 6px 10px;
-    border-radius: 12px;
-    cursor: pointer;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+    color: #ffffff;
+    box-shadow: 0 12px 24px rgba(37, 99, 235, 0.22);
 }
-.show{
-    background-color: rgb(44, 214, 44);
-     margin-top: 8px;
-    color: white;
-    border: none;
-    padding: 6px 10px;
-    border-radius: 12px;
-    cursor: pointer;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+
+.show {
+    background: #ecfdf5;
+    color: #047857;
+    border: 1px solid #a7f3d0;
+}
+
+.add:hover,
+.show:hover {
+    transform: translateY(-2px);
+}
+
+.add:hover {
+    box-shadow: 0 16px 30px rgba(37, 99, 235, 0.28);
+}
+
+.show:hover {
+    background: #d1fae5;
+}
+
+.text a {
+    width: 100%;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .Boxes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 @media (max-width: 768px) {
-    .links {
-        display: none;
+    .search {
+        flex-direction: column;
+        align-items: stretch;
     }
 
-    .header {
-        flex-wrap: wrap;
-        gap: 10px;
+    .filter {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .Boxes {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .search {
+        padding: 12px;
+        border-radius: 18px;
+    }
+
+    .box {
+        padding: 14px;
+        border-radius: 20px;
+    }
+
+    .box img {
+        height: 190px;
     }
 }
