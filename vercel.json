@@ -1,0 +1,21 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/admin",
+      "destination": "/admin/dashboard",
+      "permanent": false
+    },
+    {
+      "source": "/Client",
+      "destination": "/Client/Home",
+      "permanent": false
+    },
+    {
+      "source": "/log",
+      "destination": "/log/Login",
+      "permanent": false
+    }
+  ]
+}

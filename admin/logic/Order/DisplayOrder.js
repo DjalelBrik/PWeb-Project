@@ -17,7 +17,7 @@ export function DisplayTable(orders = store.Order) {
       <td>${order.status}</td>
       <td>${order.date}</td>
       <td>
-        <a href="ShowOrder.html?id=${order.id}">
+        <a href="/admin/ShowOrder?id=${order.id}">
           <button class="show-btn">
             <i data-lucide="eye"></i>
           </button>

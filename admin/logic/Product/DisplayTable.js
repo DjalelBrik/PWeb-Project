@@ -26,13 +26,13 @@ export function DisplayTable(products = store.products) {
       <td>${product.price} $</td>
       <td>${product.description}</td>
       <td>
-        <a href="ProductShow.html?id=${product.id}">
+        <a href="/admin/ProductShow?id=${product.id}">
           <button class="show-btn">
             <i data-lucide="eye"></i>
           </button>
         </a>
 
-        <a href="ModifyProduct.html?id=${product.id}">
+        <a href="/admin/ModifyProduct?id=${product.id}">
           <button class="modify-btn">
             <i data-lucide="pencil"></i>
           </button>

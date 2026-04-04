@@ -29,7 +29,7 @@ function saveModification() {
     product.image = URL.createObjectURL(file);
   }
 
-  window.location.href = "Product.html";
+  window.location.href = "/admin/Product";
   console.log( product.id ,
   product.title ,
   product.quantity,

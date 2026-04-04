@@ -8,10 +8,10 @@ function verifyLogin() {
     const password = passwordInput.value;
 
     if (email === "example@gmail.com" && password === "1234") {
-     window.location.href = "./../../Client/Home.html";
+     window.location.href = "/Client/Home";
 
     } else if(email === "admin@gmail.com" && password === "1234"){
-     window.location.href = "./../../admin/Dashboard.html";
+     window.location.href = "/admin/dashboard";
     }else{alert("invalid email or password")}
 }
 

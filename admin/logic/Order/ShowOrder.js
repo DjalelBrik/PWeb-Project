@@ -15,7 +15,7 @@ const productsContainer = document.getElementById("productsContainer");
 
 if (!order) {
   alert("Order not found");
-  window.location.href = "Order.html";
+  window.location.href = "/admin/Order";
 }
 
 function getStatusClass(status) {
